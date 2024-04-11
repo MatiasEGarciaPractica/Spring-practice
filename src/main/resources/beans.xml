@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--basic structure of XML-based configuration metadata-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--id : identifies the individual bean, class: type of the bean-->
+    <bean id="testBeanA" class="com.spring.prac.beanXmlPrac.TestBeanA"/>
+
+    <bean id="testBeanB" class="com.spring.prac.beanXmlPrac.TestBeanB">
+        <!--injection with constructor-->
+        <constructor-arg ref="testBeanA"/> <!--ref = bean id-->
+    </bean>
+
+    <bean id="testBeanC" class="com.spring.prac.beanXmlPrac.TestBeanC">
+        <!--injection with setter-->
+        <property name="testBeanA" ref="testBeanA"/> <!--name = property name in class-->
+    </bean>
+</beans>
+
