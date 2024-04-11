@@ -6,14 +6,14 @@
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--id : identifies the individual bean, class: type of the bean-->
-    <bean id="testBeanA" class="com.spring.prac.beanXmlPrac.TestBeanA"/>
+    <bean id="testBeanA" class="com.spring.prac.beans.TestBeanA"/>
 
-    <bean id="testBeanB" class="com.spring.prac.beanXmlPrac.TestBeanB">
+    <bean id="testBeanB" class="com.spring.prac.beans.TestBeanB">
         <!--injection with constructor-->
         <constructor-arg ref="testBeanA"/> <!--ref = bean id-->
     </bean>
 
-    <bean id="testBeanC" class="com.spring.prac.beanXmlPrac.TestBeanC">
+    <bean id="testBeanC" class="com.spring.prac.beans.TestBeanC">
         <!--injection with setter-->
         <property name="testBeanA" ref="testBeanA"/> <!--name = property name in class-->
     </bean>

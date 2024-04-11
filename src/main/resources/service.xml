@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--basic structure of XML-based configuration metadata-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+   <import resource="beans.xml"/>  <!--we need a bean declared here-->
+
+
+    <bean id="serviceA" class="com.spring.prac.service.ServiceA">
+        <constructor-arg ref="testBeanA"/>
+    </bean>
+</beans>

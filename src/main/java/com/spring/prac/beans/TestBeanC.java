@@ -1,4 +1,4 @@
-package com.spring.prac.beanXmlPrac;
+package com.spring.prac.beans;
 
 public class TestBeanC {
 

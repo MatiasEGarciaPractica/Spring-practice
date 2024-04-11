@@ -1,6 +1,4 @@
-package com.spring.prac.beanXmlPrac;
-
-import org.springframework.stereotype.Component;
+package com.spring.prac.beans;
 
 /**
  * Component declared with beans.xml. To use and get from ApplicationContext.

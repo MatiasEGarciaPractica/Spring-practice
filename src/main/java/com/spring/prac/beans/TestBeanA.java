@@ -1,4 +1,4 @@
-package com.spring.prac.beanXmlPrac;
+package com.spring.prac.beans;
 
 /**
  * Component declared with beans.xml. To use and get from ApplicationContext.
